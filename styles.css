@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #5f5103;
+} 
+
+/* Contenedor */
+
+.container {
+    border: 3px solid black;
+    max-width: auto ;
+    background-color: rgb(216, 167, 62);
+    margin: 0 auto;
+    padding: 20px 30px 20px 30px;
+}
+
+/* Header */
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    border: 2px solid brown;
+    background-color: #c77a21;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 45px 15px;
+    align-items: center;
+}
+
+/* Enlaces */
+header a {
+    color: #534703;
+}
+
+/* Icono menu hamburguesa */
+
+
+/* Icono corazon */
+header a i {
+    border: 2px solid purple;
+    color: #534703;
+    font-size: 10em;
+    
+}
+
+/* Barra de navegacion */
+.navegacion ul {
+    border: 3px solid pink;
+    display: flex;
+    flex-direction: column;
+    flex:content;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 35px;
+    color: #534703;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* .navegacion ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+} */
+
+/* #check:checked ~ ul {
+    left: 0%;
+    display: block;
+} */
+
+nav ul li {
+    border: 2px solid rgba(77, 221, 11, 0.931);
+    color: #534703;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    margin-left: 5px;
+    
+}
+
+nav ul li:hover {
+    background-color: #d6b109;
+    border-radius: 10px;
+}
+
+/* Sección principal */
+
+#seccion_principal {
+    border:4px solid purple ;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion_1 {
+    border: 2px solid rgb(51, 243, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    }
+
+h2 {
+    background-color: #fff;
+    color: #534703;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 45px 15px;
+}
+
+.seccion_1 .sobre_mi {
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    
+    flex: 1;
+}
+
+.parrafo {
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.seccion_1 .imagen_sobre_mi {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_sobre_mi img {
+    border: 5px solid #5f5103;
+    width: 190px;
+    height: 305px;
+    border-radius: 20px;
+    margin: 15px 5px;
+}
+
+.seccion_2 {
+    border: 2px solid saddlebrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carrusel {
+    border: px solid skyblue;
+    
+}
+
+.actividades {
+    border: 2px solid yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.actividad {
+    border: 5px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 33%;
+    height: 520px;
+    
+}
+
+.img_carrusel {
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+h3 { 
+    background-color: #fff;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    color: #534703;
+    font-size: 20px;
+    border-radius: 45px 15px;
+    width: 190px;
+    height: 35px;
+}
+
+.p_carrusel {
+    border: 2px solid gray;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Footer */
+.footer_1 {
+    border: 3px solid black;
+    background-color: #c77a21;
+    font-weight: bold;
+    display: flex;
+    flex-flow: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.footer_1 a {
+    background-color: #fff;
+    border: 3px solid brown;
+    border-radius: 7px;
+    color: #534703;
+}
+
+.footer_1 a p {
+    padding: 5px 7px;
+    margin: 5px 7px;
+}
+
+/* Media qüeries */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media screen and (min-width: 768px) {
+    .navegacion ul {
+        flex-direction: row;
+    }
+    header {
+        justify-content: space-between;
+    }
+    header a i {
+        font-size: 3rem;
+    }
+    .seccion_1 {
+        flex-direction: row;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width:768px) {
+    .navegacion ul {
+        display: none;
+    }
+    .checkbtn {
+        display: block;
+    }
+}
